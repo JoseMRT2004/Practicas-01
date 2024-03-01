@@ -1,3 +1,28 @@
+console.log(
+  "================================================================================================"
+);
+console.log(
+  "                ALERTA NUCLEAR: MISIL DETECTADO EN FRANCIA              "
+);
+console.log(
+  "================================================================================================"
+);
+console.log(
+  "________________________________________________________________________________________________"
+);
+console.log(
+  "En 1997, en Francia, ocurrió un grave incidente nuclear que marcó"
+);
+console.log(
+  "un hito en la historia Aunque muchos lo consideraron la peor explosión nuclear de la humanidad "
+);
+console.log(
+  "por razones que aún desconozco, milagrosamente sigo vivo para contarlo."
+);
+console.log(
+  "________________________________________________________________________________________________"
+);
+
 const readline = require("readline");
 
 const Nivel1 = readline.createInterface({
@@ -16,7 +41,6 @@ Nivel1.question("¿Quieres salir del refugio? (Si/No) ", (answer) => {
     console.log("El aire se contaminó con radiación y moriste.");
   } else {
     console.log("No entendí tu respuesta. Por favor, responde 'si' o 'no'.");
-    return;
   }
 
   const Nivel2 = readline.createInterface({
@@ -63,7 +87,7 @@ Nivel1.question("¿Quieres salir del refugio? (Si/No) ", (answer) => {
             );
           }
 
-          Nivel3.close(); // Cerramos la interfaz del tercer nivel al finalizar la pregunta
+          Nivel3.close();
         }
       );
     }
