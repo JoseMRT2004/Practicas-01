@@ -1,27 +1,22 @@
-console.log(
-  "================================================================================================"
-);
-console.log(
-  "                ALERTA NUCLEAR: MISIL DETECTADO EN FRANCIA              "
-);
-console.log(
-  "================================================================================================"
-);
-console.log(
-  "________________________________________________________________________________________________"
-);
-console.log(
-  "En 1997, en Francia, ocurrió un grave incidente nuclear que marcó"
-);
-console.log(
-  "un hito en la historia Aunque muchos lo consideraron la peor explosión nuclear de la humanidad "
-);
-console.log(
-  "por razones que aún desconozco, milagrosamente sigo vivo para contarlo."
-);
-console.log(
-  "________________________________________________________________________________________________"
-);
+process.stdout.write(`
+___      ___   __       ________    __      ___          ________     _______   ___________    _______    ______    ___________        __       ________       ______      
+|"  \    /"  | |" \     /"       )  |" \    |"  |        |"      "\   /"     "| ("     _   ")  /"     "|  /" _  "\  ("     _   ")      /""\     |"      "\     /    " \     
+ \   \  //   | ||  |   (:   \___/   ||  |   ||  |        (.  ___  :) (: ______)  )__/  \\__/  (: ______) (: ( \___)  )__/  \\__/      /    \    (.  ___  :)   // ____  \    
+ /\\  \/.    | |:  |    \___  \     |:  |   |:  |        |: \   ) ||  \/    |       \\_ /      \/    |    \/ \          \\_ /        /' /\  \   |: \   ) ||  /  /    ) :)   
+|: \.        | |.  |     __/  \\    |.  |    \  |___     (| (___\ ||  // ___)_      |.  |      // ___)_   //  \ _       |.  |       //  __'  \  (| (___\ || (: (____/ //    
+|.  \    /:  | /\  |\   /" \   :)   /\  |\  ( \_|:  \    |:       :) (:      "|     \:  |     (:      "| (:   _) \      \:  |      /   /  \\  \ |:       :)  \        /     
+|___|\__/|___|(__\_|_) (_______/   (__\_|_)  \_______)   (________/   \_______)      \__|      \_______)  \_______)      \__|     (___/    \___)(________/    \"_____/      
+                                                                                                                                                                            
+`);
+
+process.stdout.write(`
+__________________________________________________________________________________________________
+  
+  En 1997, en Francia, ocurrió un grave incidente nuclear que marcó
+  un hito en la historia Aunque muchos lo consideraron la peor explosión nuclear de la humanidad 
+  por razones que aún desconozco, milagrosamente sigo vivo para contarlo.
+__________________________________________________________________________________________________
+`);
 
 const readline = require("readline");
 
@@ -40,7 +35,12 @@ Nivel1.question("¿Quieres salir del refugio? (Si/No) ", (answer) => {
   } else if (PreguntasRespuestasNivel1 === "no") {
     console.log("El aire se contaminó con radiación y moriste.");
   } else {
-    console.log("No entendí tu respuesta. Por favor, responde 'si' o 'no'.");
+    process.stdout.write(`
+      _____  _____  _____  _____    _____  _____  _____  _____   
+     |   __||  _  ||     ||   __|  |     ||  |  ||   __|| __  |  
+     |  |  ||     || | | ||   __|  |  |  ||  |  ||   __||    -|  
+     |_____||__|__||_|_|_||_____|  |_____| \\___/ |_____||__|__|  
+    `);
   }
 
   const Nivel2 = readline.createInterface({
@@ -58,9 +58,12 @@ Nivel1.question("¿Quieres salir del refugio? (Si/No) ", (answer) => {
       } else if (PreguntasRespuestasNivel2 === "no") {
         console.log("Mueres por sed.");
       } else {
-        console.log(
-          "No entendí tu respuesta. Por favor, responde 'si' o 'no'."
-        );
+        process.stdout.write(`
+      _____  _____  _____  _____    _____  _____  _____  _____   
+     |   __||  _  ||     ||   __|  |     ||  |  ||   __|| __  |  
+     |  |  ||     || | | ||   __|  |  |  ||  |  ||   __||    -|  
+     |_____||__|__||_|_|_||_____|  |_____| \\___/ |_____||__|__|  
+    `);
       }
 
       const Nivel3 = readline.createInterface({
@@ -82,9 +85,12 @@ Nivel1.question("¿Quieres salir del refugio? (Si/No) ", (answer) => {
               "Pasaron corriendo extraños animales y gastaste las balas intentando cazarlos."
             );
           } else {
-            console.log(
-              "No entendí tu respuesta. Por favor, responde 'machete' o 'pistola'."
-            );
+            process.stdout.write(`
+      _____  _____  _____  _____    _____  _____  _____  _____   
+     |   __||  _  ||     ||   __|  |     ||  |  ||   __|| __  |  
+     |  |  ||     || | | ||   __|  |  |  ||  |  ||   __||    -|  
+     |_____||__|__||_|_|_||_____|  |_____| \\___/ |_____||__|__|  
+    `);
           }
 
           Nivel3.close();
