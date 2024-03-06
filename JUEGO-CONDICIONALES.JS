@@ -1,4 +1,7 @@
 process.stdout.write(`
+_______________________________________________________________________________________________________________________________________________________________________________
+                                                                                                                                                                                            
+  
 ___      ___   __       ________    __      ___          ________     _______   ___________    _______    ______    ___________        __       ________       ______      
 |"  \    /"  | |" \     /"       )  |" \    |"  |        |"      "\   /"     "| ("     _   ")  /"     "|  /" _  "\  ("     _   ")      /""\     |"      "\     /    " \     
  \   \  //   | ||  |   (:   \___/   ||  |   ||  |        (.  ___  :) (: ______)  )__/  \\__/  (: ______) (: ( \___)  )__/  \\__/      /    \    (.  ___  :)   // ____  \    
@@ -6,16 +9,15 @@ ___      ___   __       ________    __      ___          ________     _______   
 |: \.        | |.  |     __/  \\    |.  |    \  |___     (| (___\ ||  // ___)_      |.  |      // ___)_   //  \ _       |.  |       //  __'  \  (| (___\ || (: (____/ //    
 |.  \    /:  | /\  |\   /" \   :)   /\  |\  ( \_|:  \    |:       :) (:      "|     \:  |     (:      "| (:   _) \      \:  |      /   /  \\  \ |:       :)  \        /     
 |___|\__/|___|(__\_|_) (_______/   (__\_|_)  \_______)   (________/   \_______)      \__|      \_______)  \_______)      \__|     (___/    \___)(________/    \"_____/      
-                                                                                                                                                                            
-`);
+                          
+_______________________________________________________________________________________________________________________________________________________________________________
+ 
+"Desafío Nuclear: Sobrevivir al Caos"
 
-process.stdout.write(`
-__________________________________________________________________________________________________
-  
-  En 1997, en Francia, ocurrió un grave incidente nuclear que marcó
-  un hito en la historia Aunque muchos lo consideraron la peor explosión nuclear de la humanidad 
-  por razones que aún desconozco, milagrosamente sigo vivo para contarlo.
-__________________________________________________________________________________________________
+En 1997, en Francia, una explosión nuclear sacudió al mundo.
+Considerada por muchos como la peor de la historia, dejó un rastro de destrucción y misterio. Pero entre el caos, un sobreviviente emerge para contarlo.            
+¡Únete a esta aventura donde la supervivencia es la única opción y descubre los secretos ocultos tras el desastre nuclear más impactante de todos los tiempos!                               
+_______________________________________________________________________________________________________________________________________________________________________________
 `);
 
 const readline = require("readline");
@@ -42,6 +44,7 @@ Nivel1.question("¿Quieres salir del refugio? (Si/No) ", (answer) => {
      |_____||__|__||_|_|_||_____|  |_____| \\___/ |_____||__|__|  
     `);
   }
+  Nivel1.close();
 
   const Nivel2 = readline.createInterface({
     input: process.stdin,
@@ -65,6 +68,7 @@ Nivel1.question("¿Quieres salir del refugio? (Si/No) ", (answer) => {
      |_____||__|__||_|_|_||_____|  |_____| \\___/ |_____||__|__|  
     `);
       }
+      Nivel2.close();
 
       const Nivel3 = readline.createInterface({
         input: process.stdin,
