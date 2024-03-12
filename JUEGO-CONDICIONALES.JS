@@ -1,3 +1,7 @@
+/*Evaluar si es mas conveniente dejar este completo como el primer nivel,
+agregar mas arte en las respuestas. Cuando selecciones una respuesta mal 
+te redireccione un nivel atras.*/
+
 process.stdout.write(`
 _______________________________________________________________________________________________________________________________________________________________________________
                                                                                                                                                                                             
@@ -19,7 +23,6 @@ Considerada por muchos como la peor de la historia, dejó un rastro de destrucci
 ¡Únete a esta aventura donde la supervivencia es la única opción y descubre los secretos ocultos tras el desastre nuclear más impactante de todos los tiempos!                               
 _______________________________________________________________________________________________________________________________________________________________________________
 `);
-
 const readline = require("readline");
 
 const Nivel1 = readline.createInterface({
