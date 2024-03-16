@@ -1,7 +1,3 @@
-/*Evaluar si es mas conveniente dejar este completo como el primer nivel,
-agregar mas arte en las respuestas. Cuando selecciones una respuesta mal 
-te redireccione un nivel atras.*/
-
 process.stdout.write(`
 _______________________________________________________________________________________________________________________________________________________________________________
                                                                                                                                                                                             
@@ -31,21 +27,16 @@ const Nivel1 = readline.createInterface({
 });
 
 Nivel1.question("¿Quieres salir del refugio? (Si/No) ", (answer) => {
-  const PreguntasRespuestasNivel1 = answer.toLowerCase();
+  const RespuestasNivel1 = answer.toLowerCase();
 
-  if (PreguntasRespuestasNivel1 === "si") {
+  if (RespuestasNivel1 === "si") {
     console.log(
       "Te resulta increíble la destrucción de lo que una vez fue tu hogar en Francia."
     );
-  } else if (PreguntasRespuestasNivel1 === "no") {
+  } else if (RespuestasNivel1 === "no") {
     console.log("El aire se contaminó con radiación y moriste.");
   } else {
-    process.stdout.write(`
-      _____  _____  _____  _____    _____  _____  _____  _____   
-     |   __||  _  ||     ||   __|  |     ||  |  ||   __|| __  |  
-     |  |  ||     || | | ||   __|  |  |  ||  |  ||   __||    -|  
-     |_____||__|__||_|_|_||_____|  |_____| \\___/ |_____||__|__|  
-    `);
+    console.info("Respuesta inválida. Por favor, elige 'Si' o 'No'.");
   }
   Nivel1.close();
 
@@ -57,19 +48,14 @@ Nivel1.question("¿Quieres salir del refugio? (Si/No) ", (answer) => {
   Nivel2.question(
     "¿Quieres llevar el manual de supervivencia? (Si/No) ",
     (answer) => {
-      const PreguntasRespuestasNivel2 = answer.toLowerCase();
+      const RespuestasNivel2 = answer.toLowerCase();
 
-      if (PreguntasRespuestasNivel2 === "si") {
+      if (RespuestasNivel2 === "si") {
         console.log("Ahora sabes cómo purificar agua.");
-      } else if (PreguntasRespuestasNivel2 === "no") {
+      } else if (RespuestasNivel2 === "no") {
         console.log("Mueres por sed.");
       } else {
-        process.stdout.write(`
-      _____  _____  _____  _____    _____  _____  _____  _____   
-     |   __||  _  ||     ||   __|  |     ||  |  ||   __|| __  |  
-     |  |  ||     || | | ||   __|  |  |  ||  |  ||   __||    -|  
-     |_____||__|__||_|_|_||_____|  |_____| \\___/ |_____||__|__|  
-    `);
+        console.info("Respuesta inválida. Por favor, elige 'Si' o 'No'.");
       }
       Nivel2.close();
 
@@ -81,28 +67,27 @@ Nivel1.question("¿Quieres salir del refugio? (Si/No) ", (answer) => {
       Nivel3.question(
         "¿Quieres llevarte el machete o la pistola? (machete/pistola) ",
         (answer) => {
-          const PreguntasRespuestasNivel3 = answer.toLowerCase();
+          const RespuestasNivel3 = answer.toLowerCase();
 
-          if (PreguntasRespuestasNivel3 === "machete") {
+          if (RespuestasNivel3 === "machete") {
             console.log(
               "Encuentras un árbol de manzanas increíblemente grande pero con la ayuda de tu machete lo talas."
             );
-          } else if (PreguntasRespuestasNivel3 === "pistola") {
+          } else if (RespuestasNivel3 === "pistola") {
             console.log(
               "Pasaron corriendo extraños animales y gastaste las balas intentando cazarlos."
             );
           } else {
-            process.stdout.write(`
-      _____  _____  _____  _____    _____  _____  _____  _____   
-     |   __||  _  ||     ||   __|  |     ||  |  ||   __|| __  |  
-     |  |  ||     || | | ||   __|  |  |  ||  |  ||   __||    -|  
-     |_____||__|__||_|_|_||_____|  |_____| \\___/ |_____||__|__|  
-    `);
+            console.info(
+              "Respuesta inválida. Por favor, elige 'machete' o 'pistola'."
+            );
           }
-
           Nivel3.close();
         }
       );
     }
   );
 });
+
+/*Agregar un bucle while lo puedo resolver usando return en cada nivel, pero
+que lo que retorne sea al nivel anterior*/
