@@ -19,6 +19,7 @@ Considerada por muchos como la peor de la historia, dejó un rastro de destrucci
 ¡Únete a esta aventura donde la supervivencia es la única opción y descubre los secretos ocultos tras el desastre nuclear más impactante de todos los tiempos!                               
 _______________________________________________________________________________________________________________________________________________________________________________
 `);
+const readline = require("readline");
 
 const Nivel1 = readline.createInterface({
   input: process.stdin,
@@ -31,8 +32,8 @@ Nivel1.question("¿Quieres salir del refugio? (Si/No) ", (answer) => {
   if (RespuestasNivel1 === "si") {
     console.log(
       "Te resulta increíble la destrucción de lo que una vez fue tu hogar en Francia."
-
-    } else if (RespuestasNivel1 === "no") {
+    );
+  } else if (RespuestasNivel1 === "no") {
     console.log("El aire se contaminó con radiación y moriste.");
   } else {
     console.info("Respuesta inválida. Por favor, elige 'Si' o 'No'.");
