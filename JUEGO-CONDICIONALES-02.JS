@@ -10,7 +10,6 @@ Considerada por muchos como la peor de la historia, dejó un rastro de destrucci
 ¡Únete a esta aventura donde la supervivencia es la única opción y descubre los secretos ocultos tras el desastre nuclear más impactante de todos los tiempos!                               
 _______________________________________________________________________________________________________________________________________________________________________________
 `);
-
 const Nivel1 = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
@@ -27,7 +26,6 @@ Nivel1.question("¿Quieres salir del refugio? (Si/No) ", (answer) => {
     console.log("El aire se contaminó con radiación y moriste.");
   } else {
     console.info("Respuesta inválida. Por favor, elige 'Si' o 'No'.");
-    Nivel1.close();
   }
 
   Nivel1.question(
@@ -66,6 +64,4 @@ Nivel1.question("¿Quieres salir del refugio? (Si/No) ", (answer) => {
     }
   );
 });
-
-/*Agregar un bucle while lo puedo resolver usando return en cada nivel, pero
-que lo que retorne sea al nivel anterior*/
+//Hacer que se cierre al dar la ultima instruccion

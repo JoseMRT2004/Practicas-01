@@ -1,3 +1,5 @@
+const readline = require("readline");
+
 console.info(`
 _______________________________________________________________________________________________________________________________________________________________________________
                                                                                                                                                                                             
@@ -31,8 +33,8 @@ Nivel1.question("¿Quieres salir del refugio? (Si/No) ", (answer) => {
   if (RespuestasNivel1 === "si") {
     console.log(
       "Te resulta increíble la destrucción de lo que una vez fue tu hogar en Francia."
-
-    } else if (RespuestasNivel1 === "no") {
+    );
+  } else if (RespuestasNivel1 === "no") {
     console.log("El aire se contaminó con radiación y moriste.");
   } else {
     console.info("Respuesta inválida. Por favor, elige 'Si' o 'No'.");
@@ -87,6 +89,3 @@ Nivel1.question("¿Quieres salir del refugio? (Si/No) ", (answer) => {
     }
   );
 });
-
-/*Agregar un bucle while lo puedo resolver usando return en cada nivel, pero
-que lo que retorne sea al nivel anterior*/
