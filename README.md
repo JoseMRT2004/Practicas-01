@@ -4,7 +4,6 @@
 
 ## Descripción
 
-<hr>
 
 Este es mi espacio personal para practicar y mejorar mis habilidades en JavaScript. Contiene una variedad de ejercicios y pequeños proyectos que utilizo para consolidar mis conocimientos en este lenguaje de programación tan versátil.
 
